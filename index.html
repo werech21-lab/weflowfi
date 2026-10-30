@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090E">
+  <title>FlowFi | هندسة SaaS والأتمتة والتسويق</title>
+  <meta id="metaDesc" name="description" content="FlowFi من الكويت: هندسة أنظمة SaaS، أتمتة تيليجرام وواتساب، ومحتوى وريلز. نبني البرنامج من الصفر حتى الإطلاق.">
+  <link rel="canonical" href="https://weflowfi.com/">
+  <meta property="og:title" content="FlowFi | weflowfi.com">
+  <meta property="og:description" content="أنظمة SaaS، أتمتة ذكية، وتسويق ومحتوى من الكويت إلى الخليج والعالم.">
+  <meta property="og:url" content="https://weflowfi.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_KW">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    try {
+      if (localStorage.getItem("flowfi.lang.v1") === "en") {
+        document.documentElement.lang = "en";
+        document.documentElement.dir = "ltr";
+      }
+    } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "FlowFi",
+    "url": "https://weflowfi.com/",
+    "email": "weflowfi@gmail.com",
+    "telephone": "+96597378148",
+    "image": "https://weflowfi.com/favicon.svg",
+    "address": { "@type": "PostalAddress", "addressCountry": "KW" },
+    "areaServed": ["KW", "SA", "AE", "QA", "BH", "OM", "US", "CA"],
+    "description": "Senior full-stack and SaaS engineering, AI automation, and digital content from Kuwait for the GCC, the United States, and global clients."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#home"><span data-lang="ar">تخطَّ إلى المحتوى</span><span data-lang="en">Skip to content</span></a>
+  <noscript class="noscript">
+    <span data-lang="ar">لتشغيل الحاسبة والاستوديو ولوحة التحكم، فعّل JavaScript. يمكنك أيضاً الكتابة إلى weflowfi@gmail.com أو واتساب +965 9737 8148.</span>
+    <span data-lang="en">Enable JavaScript for the calculator, studio, and dashboard. You can also email weflowfi@gmail.com or use WhatsApp +965 9737 8148.</span>
+  </noscript>
+
+  <header class="site-header">
+    <div class="header-top wrap">
+      <a class="brand" href="#home" aria-label="FlowFi">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F3E2A0"/>
+              <stop offset="0.55" stop-color="#D4AF37"/>
+              <stop offset="1" stop-color="#00F0FF"/>
+            </linearGradient>
+          </defs>
+          <rect x="1" y="1" width="38" height="38" rx="10" fill="#0C1018" stroke="url(#logoGrad)"/>
+          <path d="M12 11h15.2v3.6H16.6v3.2h8.4v3.5h-8.4V29H12V11z" fill="url(#logoGrad)"/>
+        </svg>
+        <span class="brand-name">FlowFi<small>weflowfi.com</small></span>
+      </a>
+      <div class="header-actions">
+        <div class="seg" role="group" aria-label="Language">
+          <button type="button" data-set-lang="ar" aria-pressed="true">العربية</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+        <a class="btn btn-gold header-cta" href="#calculator"><span data-lang="ar">ابدأ مشروعك الآن</span><span data-lang="en">Start your project</span></a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navPanel">
+          <span></span><span></span><span></span>
+          <span class="sr"><span data-lang="ar">القائمة</span><span data-lang="en">Menu</span></span>
+        </button>
+      </div>
+    </div>
+    <nav id="navPanel" class="nav-panel" aria-label="Main">
+      <a href="#home"><span data-lang="ar">الرئيسية</span><span data-lang="en">Home</span></a>
+      <a href="#xray"><span data-lang="ar">الفحص المجاني</span><span data-lang="en">Free X-ray</span></a>
+      <a href="#saas"><span data-lang="ar">هندسة الـ SaaS والبرمجيات</span><span data-lang="en">SaaS & software</span></a>
+      <a href="#automation"><span data-lang="ar">الأتمتة ومساعد تيليجرام</span><span data-lang="en">Automation & Telegram</span></a>
+      <a href="#marketing"><span data-lang="ar">التسويق وصناعة المحتوى</span><span data-lang="en">Marketing & content</span></a>
+      <a href="#work"><span data-lang="ar">أعمالنا وقدراتنا</span><span data-lang="en">Work & capability</span></a>
+      <a href="#calculator"><span data-lang="ar">المستشار الذكي والاتفاق</span><span data-lang="en">Project architect</span></a>
+      <button class="nav-btn" type="button" data-open-admin><span data-lang="ar">غرفة الطلبات</span><span data-lang="en">Deal room</span></button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="vip-banner" id="vipBanner" hidden>
+          <p class="eyebrow">VIP · FlowFi</p>
+          <h2 id="vipGreeting"></h2>
+          <p id="vipDetail"></p>
+          <a class="btn btn-gold" href="#xray"><span data-lang="ar">اعرض الخطة المجهزة</span><span data-lang="en">Open the prepared plan</span></a>
+        </div>
+        <div>
+          <p class="badge"><span data-lang="ar">هندسة برمجيات متقدمة • أنظمة SaaS • أتمتة ذكية • تسويق ومحتوى رقمي</span><span data-lang="en">Advanced software engineering • SaaS systems • Intelligent automation • Digital marketing</span></p>
+          <h1 class="display"><span data-lang="ar">أبني لك أقوى الأنظمة البرمجية ومنصات الـ SaaS مهما بلغت صعوبتها، مع أتمتة ذكية ومحرك تسويق يضاعف مبيعاتك.</span><span data-lang="en">I build the strongest software systems and SaaS platforms, however difficult, with intelligent automation and a marketing engine that multiplies your sales.</span></h1>
+          <p class="sub"><span data-lang="ar">من الكويت إلى الخليج والعالم — كمبرمج ومطور أنظمة شامل، أحوّل أفكارك الكبيرة إلى برامج حقيقية، تطبيقات متكاملة، أنظمة أتمتة تعمل 24/7، وحملات محتوى وريلز احترافية تسيطر على السوق.</span><span data-lang="en">From Kuwait to the Gulf and the world — as a full-stack systems architect, I turn large ideas into real software, complete applications, 24/7 automation, and professional content and reels that take the market.</span></p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#calculator"><span data-lang="ar">ابدأ مشروعك الآن</span><span data-lang="en">Start your project</span></a>
+            <a class="btn btn-ghost" href="#pillars"><span data-lang="ar">استعرض القدرات الثلاث</span><span data-lang="en">See the three practices</span></a>
+            <a class="btn btn-line" href="#xray"><span data-lang="ar">خطة مجانية خلال 10 ثوانٍ</span><span data-lang="en">Free plan in 10 seconds</span></a>
+          </div>
+          <div class="hero-points">
+            <article><strong><span data-lang="ar">من الصفر إلى الإطلاق</span><span data-lang="en">Zero to launch</span></strong><span data-lang="ar">معمارية، بناء، دفع، ونشر.</span><span data-lang="en">Architecture, build, payments, deploy.</span></article>
+            <article><strong><span data-lang="ar">أتمتة تُراجع</span><span data-lang="en">Automation you review</span></strong><span data-lang="ar">نص، صوت، وصورة فاتورة.</span><span data-lang="en">Text, voice, and receipt image.</span></article>
+            <article><strong><span data-lang="ar">محتوى يبيع</span><span data-lang="en">Content that sells</span></strong><span data-lang="ar">سكريبت، غلاف، وفيديو قصير.</span><span data-lang="en">Script, cover, and short video.</span></article>
+          </div>
+        </div>
+
+        <div class="stage" aria-live="polite">
+          <div class="stage-tabs" role="tablist">
+            <button class="stage-tab is-on" type="button" data-hero="saas" role="tab" aria-selected="true"><span data-lang="ar">معاينة بناء أنظمة الـ SaaS</span><span data-lang="en">SaaS build preview</span></button>
+            <button class="stage-tab" type="button" data-hero="telegram" role="tab" aria-selected="false"><span data-lang="ar">معاينة مساعد FlowFi عبر تيليجرام</span><span data-lang="en">FlowFi Telegram preview</span></button>
+            <button class="stage-tab" type="button" data-hero="studio" role="tab" aria-selected="false"><span data-lang="ar">معاينة استوديو التسويق والريلز</span><span data-lang="en">Reels studio preview</span></button>
+          </div>
+
+          <div class="hero-panel is-active" data-hero-panel="saas" role="tabpanel">
+            <div class="dash-top">
+              <span><i class="live-dot" aria-hidden="true"></i> <span data-lang="ar">نموذج لوحة · توقيت الكويت</span><span data-lang="en">Sample console · Kuwait time</span> <bdi dir="ltr" id="kwClock">--:--</bdi></span>
+              <span class="tag"><span data-lang="ar">عينة</span><span data-lang="en">Sample</span></span>
+            </div>
+            <div class="dash-switch">
+              <button type="button" class="is-on" data-saas-tab="finance"><span data-lang="ar">المالية</span><span data-lang="en">Finance</span></button>
+              <button type="button" data-saas-tab="portfolio"><span data-lang="ar">المحافظ والمشاريع</span><span data-lang="en">Portfolios</span></button>
+              <button type="button" data-saas-tab="ops"><span data-lang="ar">التشغيل</span><span data-lang="en">Operations</span></button>
+            </div>
+            <div data-saas-panel="finance">
+              <div class="kpis">
+                <article class="kpi"><span><span data-lang="ar">إيراد شهري</span><span data-lang="en">Monthly revenue</span></span><strong><bdi dir="ltr">4,280.000</bdi></strong><em>KWD</em></article>
+                <article class="kpi"><span><span data-lang="ar">النقد</span><span data-lang="en">Cash</span></span><strong><bdi dir="ltr">18,640.000</bdi></strong><em>KWD</em></article>
+                <article class="kpi"><span><span data-lang="ar">مصاريف الشهر</span><span data-lang="en">Expenses MTD</span></span><strong><bdi dir="ltr">2,115.000</bdi></strong><em>KWD</em></article>
+                <article class="kpi"><span><span data-lang="ar">المدرج</span><span data-lang="en">Runway</span></span><strong><bdi dir="ltr">14</bdi></strong><em><span data-lang="ar">شهراً</span><span data-lang="en">months</span></em></article>
+              </div>
+              <div class="chart" aria-hidden="true">
+                <div class="bar"><span style="--h:42%"></span></div>
+                <div class="bar"><span style="--h:55%"></span></div>
+                <div class="bar"><span style="--h:48%"></span></div>
+                <div class="bar"><span style="--h:70%"></span></div>
+                <div class="bar"><span style="--h:64%"></span></div>
+                <div class="bar"><span style="--h:82%"></span></div>
+                <div class="bar"><span style="--h:76%"></span></div>
+              </div>
+              <ul class="feed">
+                <li><span><span data-lang="ar">اشتراك منصة</span><span data-lang="en">Platform subscription</span></span><bdi dir="ltr">890.000 KWD</bdi></li>
+                <li><span><span data-lang="ar">تحصيل KNET</span><span data-lang="en">KNET payout</span></span><bdi dir="ltr">1,240.000 KWD</bdi></li>
+                <li><span><span data-lang="ar">وقود · أحمد · نقداً</span><span data-lang="en">Fuel · Ahmed · cash</span></span><bdi dir="ltr">45.000 KWD</bdi></li>
+              </ul>
+            </div>
+            <div data-saas-panel="portfolio" hidden>
+              <div class="lane"><span><span data-lang="ar">بناء منصة اشتراكات</span><span data-lang="en">Subscription platform build</span></span><span class="tag">72%</span></div>
+              <div class="progress"><i style="--w:72%"></i></div>
+              <div class="lane"><span><span data-lang="ar">عقد أتمتة تشغيلي</span><span data-lang="en">Operations automation retainer</span></span><span class="tag">Live</span></div>
+              <div class="progress"><i style="--w:100%"></i></div>
+              <div class="lane"><span><span data-lang="ar">محرك ريلز شهري</span><span data-lang="en">Monthly reels engine</span></span><span class="tag">4 / 4</span></div>
+              <div class="progress"><i style="--w:88%"></i></div>
+              <ul class="feed" style="margin-top:10px">
+                <li><span><span data-lang="ar">فاتورة إطلاق</span><span data-lang="en">Launch invoice</span></span><span data-lang="ar">بانتظار الاعتماد</span><span data-lang="en">Awaiting approval</span></li>
+                <li><span><span data-lang="ar">دفعة شهر الشريك</span><span data-lang="en">Partner month</span></span><span data-lang="ar">مجدولة</span><span data-lang="en">Scheduled</span></li>
+              </ul>
+            </div>
+            <div data-saas-panel="ops" hidden>
+              <div class="kpis">
+                <article class="kpi"><span><span data-lang="ar">طلبات اليوم</span><span data-lang="en">Orders today</span></span><strong>36</strong></article>
+                <article class="kpi"><span><span data-lang="ar">أصناف تحت الحد</span><span data-lang="en">Below minimum</span></span><strong>5</strong></article>
+                <article class="kpi"><span><span data-lang="ar">استحقاق مورد</span><span data-lang="en">Supplier due</span></span><strong><bdi dir="ltr">640.000</bdi></strong></article>
+                <article class="kpi"><span><span data-lang="ar">توصيل معلّق</span><span data-lang="en">Open deliveries</span></span><strong>8</strong></article>
+              </div>
+              <ul class="feed" style="margin-top:12px">
+                <li><span><span data-lang="ar">فرع السالمية · نقص صنف</span><span data-lang="en">Salmiya branch · low item</span></span><span class="tag"><span data-lang="ar">متابعة</span><span data-lang="en">Follow-up</span></span></li>
+                <li><span><span data-lang="ar">توصيل #184 · خرج للعميل</span><span data-lang="en">Delivery #184 · dispatched</span></span><span class="tag">Out</span></li>
+                <li><span><span data-lang="ar">اعتماد مصروف ميداني</span><span data-lang="en">Field expense approval</span></span><bdi dir="ltr">45.000 KWD</bdi></li>
+              </ul>
+            </div>
+            <p class="sample-note"><span data-lang="ar">أرقام نموذجية لعرض قدرة اللوحة، وليست بيانات عميل ولا نتائج مضمونة.</span><span data-lang="en">Sample figures showing the console. Not a client record and not a guaranteed result.</span></p>
+          </div>
+
+          <div class="hero-panel" data-hero-panel="telegram" role="tabpanel">
+            <div class="tg-top">
+              <strong>FlowFi Assistant</strong>
+              <span class="tag"><span data-lang="ar">عينة توضيحية</span><span data-lang="en">Illustrative sample</span></span>
+            </div>
+            <div class="tg-modes">
+              <button type="button" class="is-on" data-tg="text"><span data-lang="ar">نص</span><span data-lang="en">Text</span></button>
+              <button type="button" data-tg="voice"><span data-lang="ar">رسالة صوتية</span><span data-lang="en">Voice note</span></button>
+              <button type="button" data-tg="receipt"><span data-lang="ar">صورة فاتورة</span><span data-lang="en">Receipt image</span></button>
+            </div>
+            <div class="thread" data-tg-panel="text">
+              <div class="bubble user"><span data-lang="ar">سجّل مصروف وقود نقدي بقيمة 45 د.ك للسائق أحمد.</span><span data-lang="en">Record a cash fuel expense of KWD 45 for driver Ahmed.</span></div>
+              <div class="bubble bot"><span data-lang="ar">فُهمت التفاصيل وحُضّر السجل للمراجعة. لم يُعتمد بعد.</span><span data-lang="en">Details understood. The record is ready for review and is not posted yet.</span></div>
+            </div>
+            <div class="thread" data-tg-panel="voice" hidden>
+              <div class="bubble user"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><bdi dir="ltr">0:06</bdi> — <span data-lang="ar">مصروف وقود أحمد، 45 دينار كاش.</span><span data-lang="en">Ahmed’s fuel, 45 dinars cash.</span></div>
+              <div class="bubble bot"><span data-lang="ar">حُوّلت الملاحظة الصوتية إلى الحقول التالية.</span><span data-lang="en">The voice note was mapped into the fields below.</span></div>
+            </div>
+            <div class="thread" data-tg-panel="receipt" hidden>
+              <div class="bubble user">
+                <div class="receipt">
+                  <span class="scanline" aria-hidden="true"></span>
+                  <strong>FLOW STATION</strong>
+                  <small>Kuwait</small>
+                  <hr>
+                  <div><span>Fuel 91</span><span>45.000 KWD</span></div>
+                  <div><span>VAT incl.</span><span>—</span></div>
+                  <hr>
+                  <div><strong>CASH</strong><strong>45.000</strong></div>
+                  <small>Driver · Ahmed</small>
+                </div>
+              </div>
+              <div class="bubble bot"><span data-lang="ar">قُرئت الصورة إلى سجل مصروف جاهز للمراجعة.</span><span data-lang="en">The image was read into an expense record ready for review.</span></div>
+            </div>
+            <dl class="ledger">
+              <div><dt><span data-lang="ar">النوع</span><span data-lang="en">Type</span></dt><dd><span data-lang="ar">مصروف</span><span data-lang="en">Expense</span></dd></div>
+              <div><dt><span data-lang="ar">التصنيف</span><span data-lang="en">Category</span></dt><dd><span data-lang="ar">وقود</span><span data-lang="en">Fuel</span></dd></div>
+              <div><dt><span data-lang="ar">المبلغ</span><span data-lang="en">Amount</span></dt><dd><bdi dir="ltr">45.000 KWD</bdi></dd></div>
+              <div><dt><span data-lang="ar">الدفع</span><span data-lang="en">Payment</span></dt><dd><span data-lang="ar">نقداً</span><span data-lang="en">Cash</span></dd></div>
+              <div><dt><span data-lang="ar">السائق</span><span data-lang="en">Driver</span></dt><dd><span data-lang="ar">أحمد</span><span data-lang="en">Ahmed</span></dd></div>
+              <div><dt><span data-lang="ar">الخطوة التالية</span><span data-lang="en">Next step</span></dt><dd><span data-lang="ar">مراجعة السجل</span><span data-lang="en">Review the record</span></dd></div>
+            </dl>
+            <p class="sample-note"><span data-lang="ar">ليست محادثة حية ولا سجل عميل. المدخلات والسجلات المفعّلة تُأكد أثناء التجهيز.</span><span data-lang="en">Not a live chat and not a customer record. Enabled inputs and records are confirmed during setup.</span></p>
+          </div>
+
+          <div class="hero-panel" data-hero-panel="studio" role="tabpanel">
+            <div class="studio-top">
+              <strong><span data-lang="ar">استوديو الريلز</span><span data-lang="en">Reels studio</span></strong>
+              <button class="btn btn-line btn-sm" type="button" id="cycleCover"><span data-lang="ar">فكرة غلاف أخرى</span><span data-lang="en">Another cover</span></button>
+            </div>
+            <div class="studio-mini">
+              <div class="poster" id="heroPoster" style="--c1:#140e08;--c2:#d4af37">
+                <div>
+                  <div class="poster-kicker" id="heroKicker"><span data-lang="ar">غلاف ريل</span><span data-lang="en">Reel cover</span></div>
+                  <div class="poster-title" id="heroPosterTitle"><span data-lang="ar">حضورٌ لا يُقلَّد</span><span data-lang="en">Presence, not noise</span></div>
+                </div>
+                <div class="poster-sub" id="heroPosterSub"><span data-lang="ar">9:16 · سطر ذهبي واحد</span><span data-lang="en">9:16 · one gold line</span></div>
+              </div>
+              <div class="script-mini">
+                <p class="eyebrow"><span data-lang="ar">سكريبت عينة · عطور</span><span data-lang="en">Sample script · fragrance</span></p>
+                <ol>
+                  <li><span data-lang="ar">الخطاف: العطر يدخل قبل صاحبه.</span><span data-lang="en">Hook: the fragrance arrives first.</span></li>
+                  <li><span data-lang="ar">الصورة: زجاجة، رخام، مساحة سوداء.</span><span data-lang="en">Frame: bottle, marble, black space.</span></li>
+                  <li><span data-lang="ar">الإجراء: احجز الدفعة قبل النفاد.</span><span data-lang="en">Action: reserve the batch before it is gone.</span></li>
+                </ol>
+                <div class="week" aria-hidden="true">
+                  <i class="on">1</i><i>2</i><i class="on">3</i><i>4</i><i class="on">5</i><i>6</i><i>7</i>
+                </div>
+                <p class="sample-note"><span data-lang="ar">التقويم عينة لثلاثة أيام نشر. المولّد الكامل في القسم التالي.</span><span data-lang="en">The calendar marks three publish days. The full generator is in the next section.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="markets">
+      <div class="wrap">
+        <div class="market-row" aria-label="Markets">
+          <span class="market-chip"><span data-lang="ar">الكويت</span><span data-lang="en">Kuwait</span></span>
+          <span class="market-chip"><span data-lang="ar">السعودية</span><span data-lang="en">Saudi Arabia</span></span>
+          <span class="market-chip"><span data-lang="ar">الإمارات</span><span data-lang="en">UAE</span></span>
+          <span class="market-chip"><span data-lang="ar">قطر</span><span data-lang="en">Qatar</span></span>
+          <span class="market-chip"><span data-lang="ar">البحرين</span><span data-lang="en">Bahrain</span></span>
+          <span class="market-chip"><span data-lang="ar">عُمان</span><span data-lang="en">Oman</span></span>
+          <span class="market-chip"><span data-lang="ar">الولايات المتحدة</span><span data-lang="en">United States</span></span>
+          <span class="market-chip"><span data-lang="ar">كندا</span><span data-lang="en">Canada</span></span>
+          <span class="market-chip"><span data-lang="ar">وعالمياً</span><span data-lang="en">and worldwide</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="xray">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">FlowFi · <span data-lang="ar">الفحص الذكي المجاني + هدية فورية</span><span data-lang="en">Free business X-ray + instant gift</span></p>
+          <h2><span data-lang="ar">احصل على خطة برمجية وتسويقية مجانية لمشروعك خلال 10 ثوانٍ</span><span data-lang="en">Get a free software and marketing plan for your project in 10 seconds</span></h2>
+          <p class="lede"><span data-lang="ar">اكتب اسم المشروع ومجاله ورقم الواتساب. يظهر فوراً مسار أتمتة وSaaS مناسب، مع سكريبت ريل جاهز للتصوير باسم علامتك.</span><span data-lang="en">Enter the project, its field, and a WhatsApp number. A fitting automation and SaaS path appears at once, with a reel script ready to shoot under your brand name.</span></p>
+        </div>
+        <div class="xray-layout">
+          <form class="xray-form" id="xrayForm">
+            <label class="hp" aria-hidden="true"><span>Website</span><input id="xraySite" tabindex="-1" autocomplete="off" aria-hidden="true"></label>
+            <label class="field"><span><span data-lang="ar">اسم المشروع / الشركة</span><span data-lang="en">Project / company name</span></span><input id="xrayName" maxlength="80" required autocomplete="organization"></label>
+            <label class="field"><span><span data-lang="ar">المجال</span><span data-lang="en">Field</span></span>
+              <select id="xrayNiche" required>
+                <option value="perfume" data-ar="عطور" data-en="Fragrance">عطور</option>
+                <option value="restaurant" data-ar="مطاعم" data-en="Restaurants">مطاعم</option>
+                <option value="realestate" data-ar="عقارات" data-en="Real estate">عقارات</option>
+                <option value="ecommerce" data-ar="تجارة إلكترونية" data-en="E-commerce">تجارة إلكترونية</option>
+                <option value="services" data-ar="خدمات" data-en="Services">خدمات</option>
+                <option value="apps" data-ar="تطبيقات" data-en="Apps">تطبيقات</option>
+              </select>
+            </label>
+            <label class="field"><span><span data-lang="ar">رقم الواتساب</span><span data-lang="en">WhatsApp number</span></span><input id="xrayPhone" type="tel" inputmode="tel" maxlength="20" required dir="ltr" placeholder="+965"></label>
+            <button class="btn btn-gold" type="submit" id="xraySubmit"><span data-lang="ar">حلل مشروعي الآن</span><span data-lang="en">Analyze my project</span></button>
+            <p class="soft" id="xrayError" hidden></p>
+          </form>
+          <div class="xray-result" id="xrayResult" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="architect">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 — <span data-lang="ar">نبذة عني وعن قدراتي البرمجية</span><span data-lang="en">The architect</span></p>
+          <h2><span data-lang="ar">مهندس برمجيات وأنظمة SaaS. التنفيذ من عندي، لا عبر وسيط.</span><span data-lang="en">A software and SaaS engineer. The build sits with me, not with a middle layer.</span></h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass reveal">
+            <p class="oath"><span data-lang="ar">مهما كان البرنامج الذي تفكر فيه قوياً، معقداً، أو غير تقليدي — أمتلك القدرة الهندسية الكاملة لبنائه من الألف إلى الياء.</span><span data-lang="en">Whatever system you are imagining — powerful, complex, or unconventional — I have the engineering depth to build it from the first line to launch.</span></p>
+            <div class="role-row">
+              <span class="chip">Senior Full-Stack & SaaS Architect</span>
+              <span class="chip"><span data-lang="ar">الكويت</span><span data-lang="en">Kuwait</span></span>
+            </div>
+            <p class="muted"><span data-lang="ar">أعمل مستقلاً مع شركات الخليج والولايات المتحدة والأسواق العالمية. المنتج يخرج بمعمارية واضحة: واجهات، خوادم، قاعدة بيانات، دفع، وكلاء، ثم محتوى يحرّك البيع بعد الإطلاق.</span><span data-lang="en">I work independently with companies in the Gulf, the United States, and global markets. The product ships with a clear architecture: interfaces, servers, database, payments, agents, then content that moves sales after launch.</span></p>
+            <div class="path">
+              <div><strong>01</strong><span data-lang="ar">الفكرة</span><span data-lang="en">Idea</span></div>
+              <div><strong>02</strong><span data-lang="ar">المعمارية</span><span data-lang="en">Architecture</span></div>
+              <div><strong>03</strong><span data-lang="ar">البناء</span><span data-lang="en">Build</span></div>
+              <div><strong>04</strong><span data-lang="ar">الإطلاق</span><span data-lang="en">Launch</span></div>
+            </div>
+          </article>
+          <article class="glass reveal">
+            <p class="eyebrow"><span data-lang="ar">ما يُبنى هنا</span><span data-lang="en">What gets built</span></p>
+            <ul class="cap-list">
+              <li><span data-lang="ar">منصات SaaS من الاشتراك حتى لوحة الإدارة والإطلاق.</span><span data-lang="en">SaaS platforms from subscription logic to the admin console and launch.</span></li>
+              <li><span data-lang="ar">أنظمة ويب وجوال وسحابة للطلبات والتوصيل والشركات والمنصات الاستثمارية.</span><span data-lang="en">Web, mobile, and cloud systems for orders, delivery, companies, and investment platforms.</span></li>
+              <li><span data-lang="ar">بوابات KNET وMyFatoorah وStripe حسب سوق العميل.</span><span data-lang="en">KNET, MyFatoorah, and Stripe according to the client’s market.</span></li>
+              <li><span data-lang="ar">وكلاء ذكاء اصطناعي يربطون القاعدة والجداول والبريد بمهام محددة.</span><span data-lang="en">AI agents that connect the database, sheets, and email for defined tasks.</span></li>
+              <li><span data-lang="ar">سحب بيانات ورصد تنافسي لمصادر علنية.</span><span data-lang="en">Data collection and competitive monitoring of public sources.</span></li>
+              <li><span data-lang="ar">كتابة، تصميم ريلز، وإنتاج فيديو قصير يخدم النظام بدل أن يجلس بجانبه.</span><span data-lang="en">Copy, reel design, and short video that serve the product instead of sitting beside it.</span></li>
+            </ul>
+            <div class="stack" style="margin-top:16px">
+              <span class="mini">Python</span>
+              <span class="mini">React / Next.js</span>
+              <span class="mini">Node.js</span>
+              <span class="mini">Supabase / PostgreSQL</span>
+              <span class="mini">AI Multi-Agent Systems</span>
+              <span class="mini">Telegram / WhatsApp Bots</span>
+              <span class="mini">Web Scraping & Market Intelligence</span>
+              <span class="mini">KNET · MyFatoorah · Stripe</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pillars">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 — <span data-lang="ar">الأقسام الثلاثة الكبرى</span><span data-lang="en">Three practices</span></p>
+          <h2><span data-lang="ar">هندسة، أتمتة، ثم محتوى يحرّك السوق.</span><span data-lang="en">Engineering, automation, then content that moves the market.</span></h2>
+          <p class="lede"><span data-lang="ar">اختر مساراً واحداً أو اجمعها. كل قسم مبني ليُسلَّم، لا ليُعرض كشعار.</span><span data-lang="en">Take one path or combine them. Each practice is built to be delivered, not displayed as a slogan.</span></p>
+        </div>
+        <div class="pillar-tabs" role="tablist">
+          <button type="button" class="is-on" data-pillar="saas"><span data-lang="ar">برمجة الأنظمة والـ SaaS</span><span data-lang="en">Software & SaaS</span></button>
+          <button type="button" data-pillar="automation"><span data-lang="ar">الأتمتة والوكلاء</span><span data-lang="en">Automation & agents</span></button>
+          <button type="button" data-pillar="marketing"><span data-lang="ar">التسويق والريلز</span><span data-lang="en">Marketing & reels</span></button>
+        </div>
+
+        <div class="pillar-panel is-active" id="saas">
+          <div class="bento">
+            <article class="bento-card">
+              <p class="num">01</p>
+              <h3><span data-lang="ar">منصات SaaS ربحية من الصفر</span><span data-lang="en">Profitable SaaS platforms from zero</span></h3>
+              <p class="muted"><span data-lang="ar">اشتراكات، حسابات، تعدد مستخدمين، فوترة، ولوحة تدير المنتج بعد الإطلاق.</span><span data-lang="en">Subscriptions, accounts, multi-user access, billing, and a console that runs the product after launch.</span></p>
+              <ul class="ticks">
+                <li><span data-lang="ar">خطط وأسعار وصلاحيات</span><span data-lang="en">Plans, pricing, and permissions</span></li>
+                <li><span data-lang="ar">لوحة مالك ولوحة عميل</span><span data-lang="en">Owner console and customer console</span></li>
+                <li><span data-lang="ar">نشر وتسليم الكود</span><span data-lang="en">Deployment and code handover</span></li>
+              </ul>
+            </article>
+            <article class="bento-card">
+              <p class="num">02</p>
+              <h3><span data-lang="ar">أنظمة تشغيل ثقيلة</span><span data-lang="en">Heavy operating systems</span></h3>
+              <p class="muted"><span data-lang="ar">طلبات، توصيل، إدارة شركات، ومنصات استثمارية. ويب، سحابة، وتجربة جوال.</span><span data-lang="en">Orders, delivery, company administration, and investment platforms. Web, cloud, and mobile.</span></p>
+            </article>
+            <article class="bento-card wide">
+              <p class="num">03</p>
+              <h3><span data-lang="ar">استخبارات السوق وسحب البيانات</span><span data-lang="en">Market intelligence and collection</span></h3>
+              <p class="muted"><span data-lang="ar">رصد مصادر علنية، توحيد السعر والعرض، وتنبيه عند التغيّر. الجمع يبقى ضمن المصادر المسموحة، والنتيجة تُراجع قبل أي قرار.</span><span data-lang="en">Watch public sources, normalize price and offer, and flag a change. Collection stays within permitted sources, and the result is reviewed before any decision.</span></p>
+            </article>
+          </div>
+        </div>
+
+        <div class="pillar-panel" id="automation">
+          <div class="bento">
+            <article class="bento-card">
+              <p class="num">01</p>
+              <h3><span data-lang="ar">مساعد FlowFi على تيليجرام وواتساب</span><span data-lang="en">FlowFi on Telegram and WhatsApp</span></h3>
+              <p class="muted"><span data-lang="ar">المبيعات، المصاريف بالدينار الكويتي وعملات الخليج، الفواتير، المخزون، والموردون. من نص أو صوت أو صورة إيصال.</span><span data-lang="en">Sales, expenses in KWD and Gulf currencies, invoices, inventory, and suppliers. From text, voice, or a receipt photo.</span></p>
+            </article>
+            <article class="bento-card">
+              <p class="num">02</p>
+              <h3><span data-lang="ar">وكلاء متعددون 24/7</span><span data-lang="en">Multi-agents, 24/7</span></h3>
+              <p class="muted"><span data-lang="ar">يربطون قاعدة البيانات والبريد وExcel أو Google Sheets بمهام مكتوبة. الإنسان يبقى في حلقة المراجعة.</span><span data-lang="en">They connect the database, email, and Excel or Google Sheets for written tasks. A person stays in the review loop.</span></p>
+            </article>
+            <article class="bento-card wide">
+              <div class="flow-steps">
+                <article><strong>01</strong><h3><span data-lang="ar">أرسل</span><span data-lang="en">Send</span></h3><p class="muted"><span data-lang="ar">نص، صوت، أو صورة.</span><span data-lang="en">Text, voice, or image.</span></p></article>
+                <article><strong>02</strong><h3><span data-lang="ar">افهم</span><span data-lang="en">Understand</span></h3><p class="muted"><span data-lang="ar">استخراج الحقول المتفق عليها.</span><span data-lang="en">Extract the agreed fields.</span></p></article>
+                <article><strong>03</strong><h3><span data-lang="ar">نظّم</span><span data-lang="en">Organize</span></h3><p class="muted"><span data-lang="ar">سجل في القاعدة أو الجدول.</span><span data-lang="en">A record in the database or sheet.</span></p></article>
+                <article><strong>04</strong><h3><span data-lang="ar">راجع</span><span data-lang="en">Review</span></h3><p class="muted"><span data-lang="ar">ثم اسأل عن ما سُجّل.</span><span data-lang="en">Then ask about what was recorded.</span></p></article>
+              </div>
+              <p class="honest"><span data-lang="ar">التنبيهات والتقارير والصلاحيات تُراجع وتُختبر ضمن نطاق مشروعك. تتبع GPS الحي ورسائل واتساب التلقائية لا تُفترض إلا إذا اتُفق عليها صراحة. المساعد لا يغني عن مراجعة الإنسان ولا يصدر قوائم مالية مدققة.</span><span data-lang="en">Alerts, reports, and permissions are reviewed and tested inside your scope. Live GPS and automatic WhatsApp sending are not assumed unless explicitly agreed. The assistant does not replace human review and does not issue audited financial statements.</span></p>
+            </article>
+          </div>
+        </div>
+
+        <div class="pillar-panel" id="marketing">
+          <div class="bento">
+            <article class="bento-card">
+              <p class="num">01</p>
+              <h3><span data-lang="ar">كتابة المحتوى الإبداعي والتسويقي</span><span data-lang="en">Creative and sales copy</span></h3>
+              <p class="muted"><span data-lang="ar">خطط شهرية، نصوص إعلانية بيعية، ومقالات تخدم عرضاً واضحاً.</span><span data-lang="en">Monthly plans, direct-response ads, and articles that serve a clear offer.</span></p>
+            </article>
+            <article class="bento-card">
+              <p class="num">02</p>
+              <h3><span data-lang="ar">تصميم صور الريلز والبوستات</span><span data-lang="en">Reel covers and posts</span></h3>
+              <p class="muted"><span data-lang="ar">أغلفة 9:16، كاروسيل، وهوية بصرية ثابتة للمنصات.</span><span data-lang="en">9:16 covers, carousels, and a stable visual identity for social platforms.</span></p>
+            </article>
+            <article class="bento-card">
+              <p class="num">03</p>
+              <h3><span data-lang="ar">إنتاج ومونتاج الفيديو القصير</span><span data-lang="en">Short-video production</span></h3>
+              <p class="muted"><span data-lang="ar">سكريبت، تصميم بصري، ومونتاج لريلز وTikTok وShorts يجلب انتباه العميل الجاد.</span><span data-lang="en">Script, visual design, and an edit for Reels, TikTok, and Shorts that earns serious attention.</span></p>
+            </article>
+            <article class="bento-card">
+              <p class="num">04</p>
+              <h3><span data-lang="ar">مربوط بالنظام لا منفصل عنه</span><span data-lang="en">Tied to the system</span></h3>
+              <p class="muted"><span data-lang="ar">الحملة تعرف المخزون، العرض، والخطوة التالية. لا نعد بأرقام مبيعات مختلقة.</span><span data-lang="en">The campaign knows the stock, the offer, and the next step. Invented sales figures are not part of the work.</span></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="studio">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 — <span data-lang="ar">مولّد خطط المحتوى والريلز ومخطط المشروع</span><span data-lang="en">Content, reels, and software planner</span></p>
+          <h2><span data-lang="ar">اختر مجالك. تظهر عينة السكريبت والغلاف والنظام المقترح فوراً.</span><span data-lang="en">Pick your industry. A script, a cover, and a software suggestion appear at once.</span></h2>
+        </div>
+        <div class="studio-layout">
+          <div class="chips" id="industryChips" role="listbox" aria-label="Industry"></div>
+          <div id="studioOutput">
+            <div class="empty-studio">
+              <p><span data-lang="ar">اختر مجالاً من القائمة. ستظهر ثلاثة أشياء: سكريبت ريل جاهز للتصوير، مفهوم غلاف بصري، وأتمتة برمجية تزيد وضوح البيع.</span><span data-lang="en">Choose an industry. You will get three things: a reel script ready to shoot, a visual cover concept, and a software automation that makes the sale clearer.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 — <span data-lang="ar">أعمالنا وقدراتنا</span><span data-lang="en">Capability</span></p>
+          <h2><span data-lang="ar">أنظمة أقدر على بنائها وتسليمها، معروضة كقدرات هندسية لا كشعارات عملاء.</span><span data-lang="en">Systems I can architect and deliver, shown as engineering capability rather than client slogans.</span></h2>
+        </div>
+        <div class="filters" id="workFilters">
+          <button type="button" class="is-on" data-filter="all"><span data-lang="ar">الكل</span><span data-lang="en">All</span></button>
+          <button type="button" data-filter="saas">SaaS</button>
+          <button type="button" data-filter="automation"><span data-lang="ar">أتمتة</span><span data-lang="en">Automation</span></button>
+          <button type="button" data-filter="marketing"><span data-lang="ar">تسويق</span><span data-lang="en">Marketing</span></button>
+        </div>
+        <div class="work-grid" id="workGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="calculator">
+      <div id="pricing"></div>
+      <div id="deal"></div>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">05 — <span data-lang="ar">المستشار الذكي للتسعير والاتفاق</span><span data-lang="en">AI project architect</span></p>
+          <h2><span data-lang="ar">كل مشروع يُسعَّر على مقاسه. المستشار يسأل، يفاوض، ثم يكتب الاتفاق.</span><span data-lang="en">Every project is priced to its shape. The architect asks, negotiates, then writes the agreement.</span></h2>
+          <p class="lede"><span data-lang="ar">لا باقات ثابتة. صف النظام أو الأتمتة أو الريلز، واستلم نطاقاً سعرياً ومدة، ثم أكّد الاتفاق. يصل الطلب فوراً إلى غرفة الطلبات وتيليجرام والبريد وواتساب.</span><span data-lang="en">No fixed packages. Describe the system, the automation, or the reels, receive a price range and a timeline, then confirm. The order reaches the deal room, Telegram, email, and WhatsApp immediately.</span></p>
+        </div>
+        <div class="price-tools">
+          <p class="soft" id="rateNote"></p>
+          <div class="seg" role="group" aria-label="Currency">
+            <button type="button" data-set-currency="KWD">KWD</button>
+            <button type="button" data-set-currency="SAR">SAR</button>
+            <button type="button" data-set-currency="USD">USD</button>
+          </div>
+        </div>
+        <div class="agent-home" id="agentHome">
+          <div class="agent-app" id="agentApp">
+            <div class="agent-top">
+              <div>
+                <strong><i class="live-dot" aria-hidden="true"></i> <span data-lang="ar">مستشار FlowFi</span><span data-lang="en">FlowFi Architect</span></strong>
+                <div class="soft"><span data-lang="ar">يسأل عن فكرتك، ثم يبني نطاق الاتفاق.</span><span data-lang="en">Asks about the idea, then builds the agreement.</span></div>
+              </div>
+            </div>
+            <div class="agent-log" id="agentLog" aria-live="polite"></div>
+            <div class="agent-choices" id="agentChoices"></div>
+            <form class="agent-compose" id="agentCompose">
+              <input id="agentInput" maxlength="800" autocomplete="off">
+              <button class="btn btn-gold" type="submit"><span data-lang="ar">إرسال</span><span data-lang="en">Send</span></button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">07 — <span data-lang="ar">مسار التنفيذ</span><span data-lang="en">How it moves</span></p>
+          <h2><span data-lang="ar">من الرسالة إلى نظام يعمل.</span><span data-lang="en">From the message to a system that runs.</span></h2>
+        </div>
+        <div class="process">
+          <article><strong>01</strong><h3><span data-lang="ar">النطاق</span><span data-lang="en">Scope</span></h3><p class="muted"><span data-lang="ar">نحدد ما يُبنى وما يُستثنى قبل أي سعر نهائي.</span><span data-lang="en">We name what is built and what is excluded before a final price.</span></p></article>
+          <article><strong>02</strong><h3><span data-lang="ar">المعمارية</span><span data-lang="en">Architecture</span></h3><p class="muted"><span data-lang="ar">البيانات، الصلاحيات، والدفع تُرسم قبل الواجهة النهائية.</span><span data-lang="en">Data, permissions, and payments are drawn before the final interface.</span></p></article>
+          <article><strong>03</strong><h3><span data-lang="ar">البناء والإطلاق</span><span data-lang="en">Build and launch</span></h3><p class="muted"><span data-lang="ar">تنفيذ، اختبار المسارات الحرجة، نشر، وتدريب من سيشغّل النظام.</span><span data-lang="en">Build, test the critical paths, deploy, and train the operator.</span></p></article>
+          <article><strong>04</strong><h3><span data-lang="ar">النمو</span><span data-lang="en">Growth</span></h3><p class="muted"><span data-lang="ar">أتمتة ومحتوى يكملان المنتج بعد أن يقف على قدميه.</span><span data-lang="en">Automation and content continue the product after it stands.</span></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">08 — <span data-lang="ar">أسئلة مباشرة</span><span data-lang="en">Direct questions</span></p>
+          <h2><span data-lang="ar">قبل أن نبدأ.</span><span data-lang="en">Before we start.</span></h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary><span data-lang="ar">هل يُبنى أي نوع من الأنظمة؟</span><span data-lang="en">Can any kind of system be built?</span></summary>
+            <p><span data-lang="ar">نعم، إذا كان النطاق قابلاً للتنفيذ هندسياً وقانونياً. المنتجات الثقيلة وغير التقليدية هي أصل العمل: SaaS، تشغيل، استثمار، توصيل، ورصد سوق. ما يُستثنى يُقال في مراجعة النطاق، لا يُخفى داخل العرض.</span><span data-lang="en">Yes, when the scope is technically and legally buildable. Heavy and unconventional products are the core of the work: SaaS, operations, investment, delivery, and market monitoring. Exclusions are stated in the scope review.</span></p>
+          </details>
+          <details>
+            <summary><span data-lang="ar">هل يوجد سعر ثابت؟</span><span data-lang="en">Is there a fixed price?</span></summary>
+            <p><span data-lang="ar">لا. المستشار يبني نطاقاً تقديرياً من حجم الفكرة والميزات والمدة. الاتفاق النهائي يُكتب قبل أي تنفيذ، ويمكن البدء بمرحلة أولى إذا كان النطاق كبيراً.</span><span data-lang="en">No. The architect builds an estimate from the idea, the features, and the timeline. The final agreement is written before any build, and a first phase is available when the scope is large.</span></p>
+          </details>
+          <details>
+            <summary><span data-lang="ar">كيف يعمل مساعد تيليجرام؟</span><span data-lang="en">How does the Telegram assistant work?</span></summary>
+            <p><span data-lang="ar">ترسل نصاً أو صوتاً أو صورة إيصال. تُستخرج الحقول المتفق عليها إلى سجل للمراجعة. المثال الظاهر: مصروف وقود نقدي 45 د.ك للسائق أحمد. المدخلات الفعلية تُؤكد أثناء التجهيز.</span><span data-lang="en">You send text, a voice note, or a receipt image. The agreed fields become a record for review. The sample on this page is a cash fuel expense of KWD 45 for driver Ahmed. Live inputs are confirmed during setup.</span></p>
+          </details>
+          <details>
+            <summary><span data-lang="ar">ماذا يشمل التسويق؟</span><span data-lang="en">What does marketing include?</span></summary>
+            <p><span data-lang="ar">خطة شهرية، كتابة بيعية، أغلفة ريلز وبوستات، ومونتاج فيديوهات قصيرة. لا نعرض أرقام وصول أو مبيعات على أنها نتائج محققة.</span><span data-lang="en">A monthly plan, sales copy, reel covers and posts, and short-video edits. Reach or sales figures are not presented as achieved results.</span></p>
+          </details>
+          <details>
+            <summary><span data-lang="ar">كيف يُحسب السعر والعملة؟</span><span data-lang="en">How are price and currency handled?</span></summary>
+            <p><span data-lang="ar">الأساس الدينار الكويتي. الريال والدولار للعرض فقط: 1 د.ك = 3.27 USD = 12.26 ر.س. لا يُخصم مبلغ إلا بعد عرض مكتوب.</span><span data-lang="en">The base is the Kuwaiti dinar. Riyal and dollar amounts are display only: 1 KWD = 3.27 USD = 12.26 SAR. Nothing is charged before a written proposal.</span></p>
+          </details>
+          <details>
+            <summary><span data-lang="ar">من أين تُدار الطلبات؟</span><span data-lang="en">Where are requests managed?</span></summary>
+            <p><span data-lang="ar">غرفة الطلبات الخاصة داخل الموقع تحفظ الاتفاق ونص المحادثة على هذا المتصفح. في اللحظة نفسها يُرسل ملخص الطلب إلى تيليجرام والبريد، وواتساب يفتح الرسالة الجاهزة على +965 9737 8148.</span><span data-lang="en">The private deal room stores the agreement and the chat on this browser. At the same moment the brief goes to Telegram and email, and WhatsApp opens the ready message to +965 9737 8148.</span></p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="cta-band">
+          <div class="cta-grid">
+            <div>
+              <p class="eyebrow">FlowFi · Kuwait</p>
+              <h2><span data-lang="ar">إذا كان النظام كبيراً، فهذا هو المكان الصحيح له.</span><span data-lang="en">If the system is large, this is the right place for it.</span></h2>
+              <p class="lede"><span data-lang="ar">ابدأ مع المستشار أو راسل مباشرة. الاتفاق يُراجع مع المهندس قبل التنفيذ.</span><span data-lang="en">Start with the architect or write directly. The agreement is reviewed with the engineer before the build.</span></p>
+            </div>
+            <div class="contact-links">
+              <a href="https://wa.me/96597378148" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><bdi dir="ltr">+965 9737 8148</bdi></a>
+              <a href="mailto:weflowfi@gmail.com"><span>Email</span><bdi dir="ltr">weflowfi@gmail.com</bdi></a>
+              <a href="#calculator"><span data-lang="ar">المستشار</span><span data-lang="en">Architect</span><span data-lang="ar">اتفاق حسب مشروعك</span><span data-lang="en">An agreement for your project</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>FlowFi</strong>
+        <p class="muted">weflowfi.com</p>
+        <p class="muted"><span data-lang="ar">هندسة أنظمة من الكويت.</span><span data-lang="en">Systems engineering from Kuwait.</span></p>
+      </div>
+      <div>
+        <h3><span data-lang="ar">التنقل</span><span data-lang="en">Navigate</span></h3>
+        <a href="#architect"><span data-lang="ar">القدرة الهندسية</span><span data-lang="en">Engineering</span></a>
+        <a href="#work"><span data-lang="ar">القدرات</span><span data-lang="en">Capability</span></a>
+        <a href="#xray"><span data-lang="ar">الفحص المجاني</span><span data-lang="en">Free X-ray</span></a>
+        <a href="#calculator"><span data-lang="ar">المستشار والاتفاق</span><span data-lang="en">Architect</span></a>
+      </div>
+      <div>
+        <h3><span data-lang="ar">الممارسات</span><span data-lang="en">Practices</span></h3>
+        <a href="#saas">SaaS</a>
+        <a href="#automation"><span data-lang="ar">الأتمتة</span><span data-lang="en">Automation</span></a>
+        <a href="#marketing"><span data-lang="ar">المحتوى</span><span data-lang="en">Content</span></a>
+        <a href="#studio"><span data-lang="ar">المولّد</span><span data-lang="en">Generator</span></a>
+      </div>
+      <div>
+        <h3><span data-lang="ar">التواصل</span><span data-lang="en">Contact</span></h3>
+        <a href="https://wa.me/96597378148"><bdi dir="ltr">+965 9737 8148</bdi></a>
+        <a href="mailto:weflowfi@gmail.com"><bdi dir="ltr">weflowfi@gmail.com</bdi></a>
+        <button class="nav-btn" type="button" data-open-admin style="padding-inline:0"><span data-lang="ar">غرفة الطلبات</span><span data-lang="en">Deal room</span></button>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <span>© <span id="year">2026</span> FlowFi · weflowfi.com.</span>
+      <span data-lang="ar">الأسعار تقديرية حتى اعتماد العرض. النماذج على الصفحة عينات توضيحية.</span>
+      <span data-lang="en">Prices are estimates until a proposal is confirmed. On-page models are illustrative samples.</span>
+    </div>
+  </footer>
+
+  <div class="dock">
+    <a class="btn btn-gold" href="#calculator"><span data-lang="ar">ابدأ مشروعك الآن</span><span data-lang="en">Start your project</span></a>
+    <a class="btn btn-ghost" href="https://wa.me/96597378148" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+
+  <div class="admin" id="admin" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+    <div class="admin-shell">
+      <div class="admin-top">
+        <div>
+          <p class="eyebrow">FlowFi</p>
+          <h2 id="adminTitle"><span data-lang="ar">غرفة الطلبات الخاصة</span><span data-lang="en">Private deal room</span></h2>
+        </div>
+        <button class="btn btn-line" type="button" data-close-admin><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></button>
+      </div>
+      <form class="gate" id="adminGate">
+        <p class="muted"><span data-lang="ar">الغرفة على هذا المتصفح. كل اتفاق مكتمل يُحفظ هنا مع المحادثة، ويصل إشعار إلى تيليجرام والبريد وواتساب.</span><span data-lang="en">The room lives in this browser. Each confirmed agreement is stored here with the chat, and a notice goes to Telegram, email, and WhatsApp.</span></p>
+        <label class="field"><span><span data-lang="ar">رمز الدخول</span><span data-lang="en">Access code</span></span><input id="pinInput" type="password" autocomplete="current-password" inputmode="numeric"></label>
+        <p class="soft" id="pinHint"><span data-lang="ar">الرمز الأولي: 8148 — غيّره بعد الدخول من الإعدادات.</span><span data-lang="en">Initial code: 8148 — change it after entry from Settings.</span></p>
+        <p class="form-error" id="pinError" hidden></p>
+        <button class="btn btn-gold" type="submit"><span data-lang="ar">دخول</span><span data-lang="en">Enter</span></button>
+      </form>
+      <div id="adminApp" hidden>
+        <div class="admin-nav">
+          <button type="button" data-admin-tab="leads" class="is-on"><span data-lang="ar">الطلبات</span><span data-lang="en">Orders</span></button>
+          <button type="button" data-admin-tab="sniper"><span data-lang="ar">قناص العملاء وعروض الـ VIP</span><span data-lang="en">VIP client sniper</span></button>
+          <button type="button" data-admin-tab="work"><span data-lang="ar">المعرض</span><span data-lang="en">Gallery</span></button>
+          <button type="button" data-admin-tab="settings"><span data-lang="ar">الإعدادات</span><span data-lang="en">Settings</span></button>
+        </div>
+        <section class="admin-view is-on" data-admin-view="leads">
+          <div class="statbar">
+            <div class="stats" id="leadStats"></div>
+          </div>
+          <div class="statbar" style="margin-bottom:10px">
+            <input class="search" id="leadSearch" type="search" placeholder="Search">
+            <div class="seg" id="statusFilters"></div>
+          </div>
+          <div class="leads" id="leadList"></div>
+        </section>
+        <section class="admin-view" data-admin-view="sniper">
+          <form id="sniperForm" class="editor-card">
+            <h3><span data-lang="ar">قناص كبار العملاء</span><span data-lang="en">VIP client sniper</span></h3>
+            <p class="muted"><span data-lang="ar">اكتب الشركة المستهدفة. تخرج رسالة عربية وإنجليزية جاهزة للإرسال، ورابط يفتح الموقع بتحية باسمهم.</span><span data-lang="en">Name the target company. You get an Arabic and English message ready to send, and a link that opens the site with a greeting in their name.</span></p>
+            <div class="fields">
+              <label class="field"><span><span data-lang="ar">اسم الشركة المستهدفة</span><span data-lang="en">Target company</span></span><input id="snipeName" maxlength="80" required></label>
+              <label class="field"><span><span data-lang="ar">المجال</span><span data-lang="en">Niche</span></span>
+                <select id="snipeNiche">
+                  <option value="perfume">عطور · Fragrance</option>
+                  <option value="restaurant">مطاعم · Restaurants</option>
+                  <option value="realestate">عقارات · Real estate</option>
+                  <option value="ecommerce">تجارة إلكترونية · E-commerce</option>
+                  <option value="services">خدمات · Services</option>
+                  <option value="apps">تطبيقات · Apps</option>
+                </select>
+              </label>
+              <label class="field full"><span><span data-lang="ar">نقطة الألم</span><span data-lang="en">Pain point</span></span>
+                <select id="snipePain">
+                  <option value="content">ضعف المحتوى والريلز · Weak content and reels</option>
+                  <option value="automation">غياب الأتمتة · No automation</option>
+                  <option value="saas">حاجتهم لتطبيق أو نظام SaaS · They need an app or SaaS</option>
+                  <option value="all">الثلاثة معاً · All three</option>
+                </select>
+              </label>
+            </div>
+            <button class="btn btn-gold" type="submit"><span data-lang="ar">ولّد رسالة الـ VIP والرابط</span><span data-lang="en">Generate the VIP message and link</span></button>
+          </form>
+          <div id="sniperOut"></div>
+          <div id="sniperList" class="leads" style="margin-top:12px"></div>
+        </section>
+        <section class="admin-view" data-admin-view="work">
+          <form id="workForm" class="editor-card">
+            <input type="hidden" id="workId">
+            <div class="fields">
+              <label class="field"><span><span data-lang="ar">التصنيف</span><span data-lang="en">Category</span></span>
+                <select id="workCat"><option value="saas">SaaS</option><option value="automation">Automation</option><option value="marketing">Marketing</option></select>
+              </label>
+              <label class="field"><span>Stack</span><input id="workStack" placeholder="React, PostgreSQL"></label>
+              <label class="field"><span><span data-lang="ar">العنوان بالعربية</span><span data-lang="en">Arabic title</span></span><input id="workTitleAr" required></label>
+              <label class="field"><span><span data-lang="ar">العنوان بالإنجليزية</span><span data-lang="en">English title</span></span><input id="workTitleEn" required></label>
+              <label class="field full"><span><span data-lang="ar">الملخص بالعربية</span><span data-lang="en">Arabic summary</span></span><textarea id="workSumAr"></textarea></label>
+              <label class="field full"><span><span data-lang="ar">الملخص بالإنجليزية</span><span data-lang="en">English summary</span></span><textarea id="workSumEn"></textarea></label>
+              <label class="field"><span><span data-lang="ar">نقاط عربية، سطر لكل نقطة</span><span data-lang="en">Arabic points, one per line</span></span><textarea id="workPointsAr"></textarea></label>
+              <label class="field"><span><span data-lang="ar">نقاط إنجليزية، سطر لكل نقطة</span><span data-lang="en">English points, one per line</span></span><textarea id="workPointsEn"></textarea></label>
+            </div>
+            <div class="row-actions">
+              <button class="btn btn-gold" type="submit"><span data-lang="ar">حفظ العنصر</span><span data-lang="en">Save item</span></button>
+              <button class="btn btn-line" type="button" id="workCancel"><span data-lang="ar">تفريغ النموذج</span><span data-lang="en">Clear form</span></button>
+            </div>
+          </form>
+          <div id="workAdminList" class="leads" style="margin-top:12px"></div>
+        </section>
+        <section class="admin-view" data-admin-view="settings">
+          <div class="editor-card">
+            <h3><span data-lang="ar">رمز اللوحة</span><span data-lang="en">Panel code</span></h3>
+            <div class="fields">
+              <label class="field"><span><span data-lang="ar">رمز جديد</span><span data-lang="en">New code</span></span><input id="newPin" type="password" minlength="4"></label>
+              <label class="field"><span><span data-lang="ar">تأكيد الرمز</span><span data-lang="en">Confirm code</span></span><input id="newPin2" type="password" minlength="4"></label>
+            </div>
+            <button class="btn btn-gold" type="button" id="savePin"><span data-lang="ar">تحديث الرمز</span><span data-lang="en">Update code</span></button>
+          </div>
+          <div class="editor-card" style="margin-top:12px">
+            <h3><span data-lang="ar">الإشعارات الفورية</span><span data-lang="en">Instant alerts</span></h3>
+            <p class="muted"><span data-lang="ar">تيليجرام والبريد موصولان بهذا الموقع. واتساب يفتح الرسالة على +965 9737 8148. يمكنك إضافة رابط ويب هوك يستقبل نسخة JSON من كل طلب.</span><span data-lang="en">Telegram and email are connected on this site. WhatsApp opens the message to +965 9737 8148. You can add a webhook URL that receives a JSON copy of every order.</span></p>
+            <label class="field"><span>Webhook URL</span><input id="webhookUrl" type="url" placeholder="https://example.com/api/orders" dir="ltr"></label>
+            <div class="row-actions">
+              <button class="btn btn-gold" type="button" id="testTelegram"><span data-lang="ar">اختبار إشعار تيليجرام</span><span data-lang="en">Test Telegram notification</span></button>
+            </div>
+            <p class="soft" id="channelStatus"></p>
+          </div>
+          <div class="row-actions" style="margin-top:12px">
+            <button class="btn btn-line" type="button" id="exportJson">JSON</button>
+            <button class="btn btn-line" type="button" id="exportCsv">CSV</button>
+            <button class="btn btn-line" type="button" id="resetDefaults"><span data-lang="ar">استعادة المعرض</span><span data-lang="en">Restore gallery</span></button>
+          </div>
+          <p class="soft" style="margin-top:10px"><span data-lang="ar">التخزين محلي في هذا المتصفح. صدّر الملف إذا بدلت الجهاز. الرمز يحمي الفتح العابر على هذا الجهاز فقط.</span><span data-lang="en">Storage is local to this browser. Export the file if you change devices. The code only guards casual access on this device.</span></p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <button class="agent-fab" id="agentFab" type="button">
+    <span data-lang="ar">المستشار الذكي</span>
+    <span data-lang="en">Architect</span>
+  </button>
+  <div class="agent-float" id="agentFloat" hidden>
+    <div class="agent-float-bar">
+      <strong><span data-lang="ar">المستشار الذكي للتسعير والاتفاق</span><span data-lang="en">Project architect</span></strong>
+      <button class="btn btn-line btn-sm" type="button" id="closeFloat"><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></button>
+    </div>
+    <div id="agentFloatBody"></div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/agent.js"></script>
+  <script src="js/acquire.js"></script>
+</body>
+</html>

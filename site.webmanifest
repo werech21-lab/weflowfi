@@ -1,0 +1,11 @@
+{
+  "name": "FlowFi | weflowfi.com",
+  "short_name": "FlowFi",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07090E",
+  "theme_color": "#07090E",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

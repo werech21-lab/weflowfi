@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: weflowfi
+    runtime: static
+    buildCommand: echo static
+    staticPublishPath: .
