@@ -557,7 +557,7 @@
       message,
       whatsapp: "https://wa.me/" + D.contact.whatsapp + "?text=" + encodeURIComponent(wa),
       telegram: "https://t.me/share/url?url=" + encodeURIComponent(D.contact.site) + "&text=" + encodeURIComponent(wa),
-      email: "mailto:senshy1500@gmail.com?subject=" + encodeURIComponent("FlowFi " + lead.id) + "&body=" + encodeURIComponent(message)
+      email: "mailto:" + D.contact.email + "?cc=" + encodeURIComponent(D.contact.emailCc || "") + "&subject=" + encodeURIComponent("FlowFi " + lead.id) + "&body=" + encodeURIComponent(message)
     };
   }
 

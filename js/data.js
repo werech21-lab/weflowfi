@@ -1,6 +1,7 @@
 window.FLOWFI = {
   contact: {
-    email: "weflowfi@gmail.com",
+    email: "senshy1500@gmail.com",
+    emailCc: "werech21@gmail.com",
     phone: "+96597378148",
     phonePretty: "+965 9737 8148",
     whatsapp: "96597378148",
