@@ -231,6 +231,19 @@
   }
 
   function bind() {
+    const playLoud = $("#playPromoLoud");
+    const promo = $("#flowfiPromo");
+    if (playLoud && promo) {
+      playLoud.addEventListener("click", async () => {
+        try {
+          promo.muted = false;
+          promo.volume = 1;
+          await promo.play();
+        } catch (err) {
+          promo.controls = true;
+        }
+      });
+    }
     const refresh = $("#foundryRefresh");
     if (refresh) refresh.addEventListener("click", loadProducts);
     document.addEventListener("click", (event) => {

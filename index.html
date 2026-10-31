@@ -94,6 +94,35 @@
           </div>
         </div>
 
+        <!-- Cinematic promo -->
+        <div class="reveal delay-1 mx-auto max-w-4xl mb-14">
+          <div class="spotlight-card rounded-3xl border border-cyan-electric/20 bg-white/[0.03] backdrop-blur-xl overflow-hidden shadow-glow p-2 sm:p-3">
+            <div class="relative rounded-2xl overflow-hidden border border-white/10 bg-black/50">
+              <video
+                id="flowfiPromo"
+                class="w-full aspect-video object-cover"
+                controls
+                playsinline
+                preload="metadata"
+                poster=""
+                src="assets/flowfi_promo_25s.mp4"
+              >
+                متصفحك لا يدعم تشغيل الفيديو.
+              </video>
+              <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/70 to-transparent pointer-events-none">
+                <p class="text-sm text-white/80 font-medium">FlowFi Promo · 25s · Uplifting Growth Soundtrack</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-between gap-3 px-2 py-3">
+              <p class="text-xs text-white/45">فيلم دعائي سينمائي — اضغط التشغيل بالصوت الكامل</p>
+              <button type="button" id="playPromoLoud" class="cta-glow inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-obsidian bg-gradient-to-r from-cyan-electric to-indigo-electric">
+                <i data-lucide="play" class="h-4 w-4"></i>
+                تشغيل بالصوت
+              </button>
+            </div>
+          </div>
+        </div>
+
         <!-- Live AI Terminal -->
         <div class="reveal delay-1 mx-auto max-w-3xl">
           <div class="spotlight-card terminal-shell rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden shadow-glowIndigo">
