@@ -50,26 +50,26 @@
     const el = document.getElementById("liveTerminal");
     if (!el) return;
     const linesAr = [
-      { t: "$ flowfi agents boot --crew diwaniya", c: "cmd" },
-      { t: "→ scanning market wedge…", c: "dim" },
-      { t: "✓ opportunity locked: Lead Reply Copilot", c: "ok" },
-      { t: "$ foundry build --stack fastapi", c: "cmd" },
-      { t: "→ writing app.py · quality_gate…", c: "dim" },
-      { t: "✓ QA 100% · product staged", c: "ok" },
-      { t: "$ growth launch --channel owned", c: "cmd" },
-      { t: "→ drafting campaign · Telegram alert…", c: "dim" },
-      { t: "✓ venture live in lab · /v1/foundry/products", c: "ok" }
+      { t: "$ flowfi boot --crew gemini,grok,openai,apollo", c: "cmd" },
+      { t: "→ Grok: live trends · Gemini: strategy · OpenAI: copy", c: "dim" },
+      { t: "✓ wedge locked: Lead Reply Copilot", c: "ok" },
+      { t: "$ apollo hunt --titles CEO,Founder --geo GCC", c: "cmd" },
+      { t: "→ enriching inbound lead · /people/match…", c: "dim" },
+      { t: "✓ prospect card → Telegram command center", c: "ok" },
+      { t: "$ foundry build && media studio render", c: "cmd" },
+      { t: "→ personalized pitch · reel storyboard…", c: "dim" },
+      { t: "✓ live on /v1/foundry/products + /v1/media/studio", c: "ok" }
     ];
     const linesEn = [
-      { t: "$ flowfi agents boot --crew diwaniya", c: "cmd" },
-      { t: "→ scanning market wedge…", c: "dim" },
-      { t: "✓ opportunity locked: Lead Reply Copilot", c: "ok" },
-      { t: "$ foundry build --stack fastapi", c: "cmd" },
-      { t: "→ writing app.py · quality_gate…", c: "dim" },
-      { t: "✓ QA 100% · product staged", c: "ok" },
-      { t: "$ growth launch --channel owned", c: "cmd" },
-      { t: "→ drafting campaign · Telegram alert…", c: "dim" },
-      { t: "✓ venture live in lab · /v1/foundry/products", c: "ok" }
+      { t: "$ flowfi boot --crew gemini,grok,openai,apollo", c: "cmd" },
+      { t: "→ Grok: live trends · Gemini: strategy · OpenAI: copy", c: "dim" },
+      { t: "✓ wedge locked: Lead Reply Copilot", c: "ok" },
+      { t: "$ apollo hunt --titles CEO,Founder --geo GCC", c: "cmd" },
+      { t: "→ enriching inbound lead · /people/match…", c: "dim" },
+      { t: "✓ prospect card → Telegram command center", c: "ok" },
+      { t: "$ foundry build && media studio render", c: "cmd" },
+      { t: "→ personalized pitch · reel storyboard…", c: "dim" },
+      { t: "✓ live on /v1/foundry/products + /v1/media/studio", c: "ok" }
     ];
 
     let i = 0;
