@@ -177,6 +177,59 @@
     }
   }
 
+  function mediaUrl(imagePath) {
+    const rel = String(imagePath || "").replace(/^outputs\/media_studio\//, "");
+    return API_BASE + "/media-studio/" + rel.split("\\").join("/");
+  }
+
+  async function loadStudio() {
+    const grid = $("#studioGrid");
+    const meta = $("#studioMeta");
+    if (!grid) return;
+    meta.textContent = lang() === "en" ? "Loading studio…" : "جارٍ تحميل الاستوديو…";
+    try {
+      const response = await fetch(API_BASE + "/v1/media/studio", { headers: { Accept: "application/json" } });
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      const data = await response.json();
+      const assets = data.assets || [];
+      meta.textContent =
+        (lang() === "en" ? "Live assets · " : "أصول حية · ") + assets.length;
+      if (!assets.length) {
+        grid.innerHTML =
+          '<p class="text-white/40 text-sm">' +
+          (lang() === "en"
+            ? "No campaigns yet. Send /create_campaign on Telegram."
+            : "لا حملات بعد. أرسل /create_campaign على تيليجرام.") +
+          "</p>";
+        return;
+      }
+      grid.innerHTML = assets
+        .map((a) => {
+          const src = mediaUrl(a.image);
+          return (
+            '<article class="spotlight-card foundry-card rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden">' +
+            '<img src="' +
+            esc(src) +
+            '" alt="" class="w-full aspect-[4/5] object-cover bg-black/40" loading="lazy">' +
+            '<div class="p-4">' +
+            '<p class="text-[11px] text-cyan-soft/80 mb-1">' +
+            esc(a.topic || "") +
+            "</p>" +
+            '<h3 class="text-base font-semibold mb-2">' +
+            esc(a.headline || "FlowFi") +
+            "</h3>" +
+            '<p class="text-sm text-white/45 line-clamp-3">' +
+            esc(a.caption || "") +
+            "</p></div></article>"
+          );
+        })
+        .join("");
+      icons();
+    } catch (err) {
+      meta.textContent = String(err.message || err);
+    }
+  }
+
   function bind() {
     const refresh = $("#foundryRefresh");
     if (refresh) refresh.addEventListener("click", loadProducts);
@@ -197,6 +250,7 @@
     const leadForm = $("#portalLeadForm");
     if (leadForm) leadForm.addEventListener("submit", submitLead);
     loadProducts();
+    loadStudio();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
