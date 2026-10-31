@@ -1072,3 +1072,135 @@ body.lock .dock { display: none; }
   .site-header, .dock, .admin, .toast, .wizard-nav, .menu-btn { display: none !important; }
   body { background: #fff; color: #111; }
 }
+
+/* —— OmniApex portal: Live Foundry + Request desk —— */
+.brand-hero {
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  letter-spacing: -0.02em;
+  background: linear-gradient(120deg, #f3e2a0 0%, #d4af37 42%, #00f0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.55rem;
+  animation: brandPulse 7s ease-in-out infinite;
+}
+.hero-lead { max-width: 36rem; font-size: 1.12rem; color: var(--muted); }
+@keyframes brandPulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.12); }
+}
+.foundry-section, .request-section {
+  position: relative;
+}
+.foundry-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(700px 280px at 10% 0%, rgba(0, 240, 255, 0.08), transparent 60%),
+    radial-gradient(600px 260px at 90% 20%, rgba(212, 175, 55, 0.1), transparent 55%);
+  pointer-events: none;
+}
+.foundry-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.2rem 0 1.6rem;
+}
+.foundry-meta { color: var(--soft); font-size: 0.95rem; }
+.foundry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.1rem;
+}
+.foundry-card {
+  padding: 1.25rem 1.3rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(160deg, rgba(12, 16, 24, 0.95), rgba(7, 9, 14, 0.88));
+  box-shadow: var(--shadow);
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+.foundry-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 240, 255, 0.35);
+}
+.foundry-card h3 { margin: 0.35rem 0 0.55rem; font-size: 1.2rem; }
+.foundry-card .btn { margin-top: 0.9rem; width: 100%; }
+.foundry-try {
+  margin-top: 1.6rem;
+  padding: 1.4rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  background: rgba(12, 16, 24, 0.92);
+}
+.foundry-try-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+.foundry-try-form, .request-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem 1rem;
+}
+.foundry-try-form label, .request-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.foundry-try-form .full, .request-form .full { grid-column: 1 / -1; }
+.foundry-try-form input, .foundry-try-form textarea,
+.request-form input, .request-form textarea {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #0a0d14;
+  padding: 0.75rem 0.9rem;
+}
+.foundry-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #05070b;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  overflow: auto;
+  max-height: 320px;
+  font-size: 0.85rem;
+  color: #d7f9ff;
+  white-space: pre-wrap;
+}
+.request-form {
+  margin-top: 1.4rem;
+  padding: 1.5rem;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(145deg, rgba(212, 175, 55, 0.08), transparent 40%),
+    rgba(12, 16, 24, 0.94);
+}
+.request-form .consent {
+  flex-direction: row;
+  align-items: flex-start;
+  font-weight: 500;
+  gap: 0.55rem;
+}
+.request-form .consent input { margin-top: 0.25rem; width: auto; }
+.request-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.request-status { color: var(--muted); margin: 0; }
+.request-status[data-state="ok"] { color: var(--ok); }
+.request-status[data-state="error"] { color: var(--danger); }
+@media (max-width: 720px) {
+  .foundry-try-form, .request-form { grid-template-columns: 1fr; }
+}
